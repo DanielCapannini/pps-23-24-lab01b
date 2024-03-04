@@ -31,4 +31,10 @@ public class LogicTest {
     assertFalse(logics.hit(pawn.getX(), pawn.getY()));
     assertFalse(logics.hit(3, 6));
   }
+
+  @Test
+  public void hitTrueTest(){
+    logics = new LogicsImpl(10, new Pair<>(2, 2), new Pair<>(4, 3));
+    assertTrue(logics.hit(2, 2));
+  }
 }
