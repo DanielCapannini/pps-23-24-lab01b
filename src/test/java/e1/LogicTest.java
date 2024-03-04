@@ -19,4 +19,10 @@ public class LogicTest {
     assertTrue(logics.hasKnight(knight.getX(), knight.getY()));
     assertFalse(logics.hasKnight(pawn.getX(), pawn.getY()));
   }
+
+  @Test
+  public void hasPawnTest(){
+    assertFalse(logics.hasPawn(knight.getX(), knight.getY()));
+    assertTrue(logics.hasPawn(pawn.getX(), pawn.getY()));
+  }
 }
