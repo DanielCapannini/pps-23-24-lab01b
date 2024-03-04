@@ -25,4 +25,10 @@ public class LogicTest {
     assertFalse(logics.hasPawn(knight.getX(), knight.getY()));
     assertTrue(logics.hasPawn(pawn.getX(), pawn.getY()));
   }
+
+  @Test
+  public void hitFalseTest(){
+    assertFalse(logics.hit(pawn.getX(), pawn.getY()));
+    assertFalse(logics.hit(3, 6));
+  }
 }
