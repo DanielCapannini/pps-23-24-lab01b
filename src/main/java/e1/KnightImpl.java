@@ -12,4 +12,16 @@ public class KnightImpl implements Knight{
     public boolean hit(int x, int y) {
         return position.equals(new Pair<>(x, y));
     }
+
+    @Override
+    public boolean move(int x, int y) {
+        int row = x - position.getX();
+        int col = y - position.getY();
+        if (row!=0 && col!=0 && Math.abs(row)+Math.abs(col)==3) {
+            this.position = new Pair<>(x, y);
+            return true;
+        }
+        return false;
+
+    }
 }

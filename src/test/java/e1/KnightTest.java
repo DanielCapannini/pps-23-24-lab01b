@@ -26,6 +26,7 @@ public class KnightTest {
     @Test
     public void moveTest(){
         assertTrue(knight.move(3, 4));
+        knight.move(position.getX(), position.getX());
         assertFalse(knight.move(5, 5));
     }
 }
