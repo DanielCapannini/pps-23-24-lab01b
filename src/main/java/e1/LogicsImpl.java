@@ -4,21 +4,21 @@ import java.util.*;
 
 public class LogicsImpl implements Logics {
 	
-	private final Pair<Integer,Integer> pawn;
-	private Pair<Integer,Integer> knight;
+	private final Pawn pawn;
+	private Knight knight;
 	private final Random random = new Random();
 	private final int size;
 	 
     public LogicsImpl(int size){
     	this.size = size;
-        this.pawn = this.randomEmptyPosition();
-        this.knight = this.randomEmptyPosition();	
+        this.pawn = new PawnImpl(this.randomEmptyPosition());
+        this.knight = new KnightImpl(this.randomEmptyPosition());
     }
 
 	public LogicsImpl(int size, Pair<Integer, Integer> pawn, Pair<Integer,Integer> knight){
 		this.size = size;
-		this.pawn = pawn;
-		this.knight = knight;
+		this.pawn = new PawnImpl(pawn);
+		this.knight = new KnightImpl(knight);
 	}
     
 	private final Pair<Integer,Integer> randomEmptyPosition(){
