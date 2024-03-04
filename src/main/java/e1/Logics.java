@@ -18,10 +18,10 @@ public interface Logics{
      */
     boolean hasKnight(int row, int col);
     
-    /**
+    /**whether position row,col has the pawn
      * @param row
      * @param col
-     * @return whether position row,col has the pawn
+     * @return
      */
     boolean hasPawn(int row, int col);
 }

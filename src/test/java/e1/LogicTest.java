@@ -3,6 +3,17 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 public class LogicTest {
 
+  private Logics logics;
+  private Pair<Integer, Integer> pawn;
+  private Pair<Integer, Integer> knight;
+
+  @BeforeEach
+  public void beforEach(){
+    pawn = new Pair<>(2, 4);
+    knight = new Pair<>(5, 7);
+    logics = new LogicsImpl(10, pawn, knight);
+  }
+
   @Test
   public void test() {
     assert(true);
