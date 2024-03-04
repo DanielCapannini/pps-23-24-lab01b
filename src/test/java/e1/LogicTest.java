@@ -15,12 +15,8 @@ public class LogicTest {
   }
 
   @Test
-  public void test() {
-    assert(true);
-    // TODO: Add your test logic here
-    // You can generate random inputs and assert the expected output
-    // For example:
-    // int result = Logic.someMethod(5, 10);
-    // assertEquals(expectedResult, result);
+  public void hasKnightTest() {
+    assertTrue(logics.hasKnight(knight.getX(), knight.getY()));
+    assertFalse(logics.hasKnight(pawn.getX(), pawn.getY()));
   }
 }
