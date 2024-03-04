@@ -5,10 +5,11 @@ import org.junit.jupiter.api.BeforeEach;
 public class KnightTest {
 
     Knight knight;
-
+    Pair<Integer, Integer> position;
 
     @BeforeEach
     public void beforeEach(){
-        knight = new KnightImpl();
+        position = new Pair<>(2,2);
+        knight = new KnightImpl(position);
     }
 }
