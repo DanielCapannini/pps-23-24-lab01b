@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="635a094a-8863-44c4-95cc-a9e1f61fbd88" name="Changes" comment="create PawnImpl">
-      <change beforePath="$PROJECT_DIR$/src/main/java/e1/PawnImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/e1/PawnImpl.java" afterDir="false" />
+    <list default="true" id="635a094a-8863-44c4-95cc-a9e1f61fbd88" name="Changes" comment="implement hit Knight">
+      <change beforePath="$PROJECT_DIR$/src/test/java/e1/KnightTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/e1/KnightTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -59,21 +62,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/danie/Documents/GitHub/pps-23-24-lab01b&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.LogicTest.hitTrueTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="e1.Main" />
-      <module name="pps-23-24-lab01b.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="e1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LogicTest.hasKnightTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.KnightTest.hitTest">
+    <configuration name="KnightTest.hitTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -86,7 +76,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;e1.LogicTest.hasKnightTest&quot;" />
+            <option value="&quot;e1.KnightTest.hitTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -169,13 +159,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="PawnTest.hitPositionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;e1.PawnTest.hitPositionTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.KnightTest.hitTest" />
+        <item itemvalue="Gradle.PawnTest.hitPositionTest" />
         <item itemvalue="Gradle.LogicTest.hitTrueTest" />
         <item itemvalue="Gradle.LogicTest.hitFalseTest" />
         <item itemvalue="Gradle.LogicTest.hasPawnTest" />
-        <item itemvalue="Gradle.LogicTest.hasKnightTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -252,18 +266,80 @@
       <option name="project" value="LOCAL" />
       <updated>1709547091079</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="create beforeEach">
+      <option name="closed" value="true" />
+      <created>1709547255636</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709547255636</updated>
+    </task>
+    <task id="LOCAL-00010" summary="create hitPositionTest">
+      <option name="closed" value="true" />
+      <created>1709547414519</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709547414519</updated>
+    </task>
+    <task id="LOCAL-00011" summary="implement hit Pawn">
+      <option name="closed" value="true" />
+      <created>1709547547196</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709547547196</updated>
+    </task>
+    <task id="LOCAL-00012" summary="create Knight, KnightImpl, KnightTest">
+      <option name="closed" value="true" />
+      <created>1709547787226</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709547787226</updated>
+    </task>
+    <task id="LOCAL-00013" summary="create beforEach">
+      <option name="closed" value="true" />
+      <created>1709548030510</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709548030510</updated>
+    </task>
+    <task id="LOCAL-00014" summary="create hitTest">
+      <option name="closed" value="true" />
+      <created>1709548136696</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1709548136696</updated>
+    </task>
+    <task id="LOCAL-00015" summary="implement hit Knight">
+      <option name="closed" value="true" />
+      <created>1709548209148</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1709548209148</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="new constructor" />
-    <MESSAGE value="create beforeEach" />
     <MESSAGE value="create hasKnightTest" />
     <MESSAGE value="create hasPawnTest" />
     <MESSAGE value="create hitFalseTest" />
     <MESSAGE value="create hitTrueTest" />
     <MESSAGE value="create PawnTest and Pawn" />
     <MESSAGE value="create PawnImpl" />
-    <option name="LAST_COMMIT_MESSAGE" value="create PawnImpl" />
+    <MESSAGE value="create beforeEach" />
+    <MESSAGE value="create hitPositionTest" />
+    <MESSAGE value="implement hit Pawn" />
+    <MESSAGE value="create Knight, KnightImpl, KnightTest" />
+    <MESSAGE value="create beforEach" />
+    <MESSAGE value="create hitTest" />
+    <MESSAGE value="implement hit Knight" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement hit Knight" />
   </component>
 </project>
