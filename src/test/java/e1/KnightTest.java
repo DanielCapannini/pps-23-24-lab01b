@@ -22,4 +22,10 @@ public class KnightTest {
         assertTrue(knight.hit(position.getX(), position.getY()));
         assertFalse(knight.hit(4, 4));
     }
+
+    @Test
+    public void moveTest(){
+        assertTrue(knight.move(3, 4));
+        assertFalse(knight.move(5, 5));
+    }
 }
